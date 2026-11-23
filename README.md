@@ -10,7 +10,7 @@ Página única, sem dependências de build: basta abrir o `index.html` no navega
 - **Personalização:** cada peça é feita sob encomenda, com nome do bebê, tema e paleta de cores.
 - **Como encomendar:** três passos, do primeiro contato à entrega.
 - **Depoimentos, dúvidas frequentes e formulário de pedido** que monta a mensagem e abre o WhatsApp.
-- **Ilustrações em SVG** feitas sob medida (nenhuma foto externa é necessária).
+- **Ilustrações em SVG** feitas sob medida e as logos da marca aplicadas no cabeçalho, no ateliê e no rodapé.
 - **Borboletas decorativas** animadas, como um jardim fofo.
 
 ## Estrutura de arquivos
@@ -19,9 +19,22 @@ Página única, sem dependências de build: basta abrir o `index.html` no navega
 index.html          página completa (HTML semântico)
 styles.css          identidade visual, layout e responsividade
 script.js           menu, animações, FAQ, formulário e link do WhatsApp
-assets/             ilustrações SVG (hero, ateliê, favicon e 7 categorias)
+assets/             ilustrações SVG, logos e favicons
 README.md           este arquivo
 ```
+
+### Arquivos da marca
+
+| Arquivo | Uso |
+| --- | --- |
+| `assets/logo-emblem.png` | marca compacta (letra A florida) no cabeçalho |
+| `assets/logo-full.png` | logo completa “Anne Decor” no rodapé |
+| `assets/logo-gold.jpg` | logo dourada em relevo, emoldurada no ateliê |
+| `assets/favicon-64.png` / `favicon-180.png` | ícone da aba e ícone para iOS |
+| `assets/logo-line.jpeg` / `logo-gold.jpeg` | arquivos originais enviados, mantidos como fonte |
+
+As versões PNG foram geradas a partir da logo em traço, com fundo transparente. Para trocar a marca,
+substitua os arquivos mantendo os mesmos nomes (e, de preferência, proporções próximas).
 
 ## Antes de publicar
 
@@ -61,6 +74,16 @@ Cada card usa uma ilustração SVG em `assets/`. Para trocar por fotos:
 3. Ajuste o `alt` para descrever a peça fotografada.
 
 Mantenha a proporção próxima de **360 × 260** nos cards e **520 × 620** no hero.
+
+### 5. Imagem de compartilhamento
+
+O `index.html` já define `assets/logo-gold.jpg` como imagem de compartilhamento. Ao publicar,
+troque o caminho relativo por uma URL absoluta (com `https://` e o domínio final), porque alguns
+aplicativos de mensagem não resolvem caminhos relativos:
+
+```html
+<meta property="og:image" content="https://seudominio.com.br/assets/logo-gold.jpg">
+```
 
 ## Como visualizar
 

@@ -54,6 +54,13 @@ svg {
   max-width: 100%;
 }
 
+.sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 img {
   height: auto;
 }
@@ -251,9 +258,17 @@ ol {
 }
 
 .brand-mark {
-  width: 44px;
-  height: 44px;
+  width: 54px;
+  height: 54px;
   flex: none;
+  display: grid;
+  place-items: center;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .brand-text {
@@ -894,6 +909,7 @@ ol {
 }
 
 .atelier-frame {
+  position: relative;
   border-radius: 28px;
   overflow: hidden;
   background: var(--cream-deep);
@@ -909,6 +925,29 @@ ol {
 .atelier-frame img {
   width: 100%;
   height: auto;
+}
+
+.atelier-plaque {
+  position: absolute;
+  top: 17%;
+  right: 7.5%;
+  width: 45%;
+  max-width: 300px;
+  margin: 0;
+  padding: 6px;
+  background: #fffcf7;
+  border: 2px solid #c9a17c;
+  box-shadow: 0 14px 26px -14px rgba(63, 50, 45, 0.5);
+  transform: rotate(1.4deg);
+  transition: transform 0.4s ease;
+}
+
+.atelier-frame:hover .atelier-plaque {
+  transform: rotate(0deg);
+}
+
+.atelier-plaque img {
+  display: block;
 }
 
 .atelier-note {
@@ -1593,17 +1632,28 @@ ol {
   margin-top: 16px;
 }
 
-.brand--footer .brand-mark {
-  width: 40px;
-  height: 40px;
+.footer-logo-link {
+  display: inline-block;
+  transition: opacity 0.25s ease;
 }
 
-.brand--footer .brand-text strong {
-  color: #f8f2e8;
+.footer-logo-link:hover {
+  opacity: 0.85;
 }
 
-.brand--footer .brand-text small {
-  color: #a8988e;
+.footer-logo {
+  width: 252px;
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 12px 26px rgba(0, 0, 0, 0.22));
+}
+
+.footer-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem !important;
+  color: #d9c3a6 !important;
+  margin-top: 14px !important;
 }
 
 .footer-nav {
@@ -1665,20 +1715,20 @@ ol {
   z-index: 60;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 18px 12px 14px;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
   background: #25d366;
   color: #fff;
-  border-radius: 999px;
+  border-radius: 50%;
   box-shadow: 0 16px 36px -12px rgba(37, 211, 102, 0.6);
-  font-size: 13px;
-  font-weight: 700;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .wa-float .icon {
-  width: 22px;
-  height: 22px;
+  width: 27px;
+  height: 27px;
 }
 
 .wa-float:hover {
@@ -1687,7 +1737,7 @@ ol {
 }
 
 .wa-float-label {
-  display: inline;
+  display: none;
 }
 
 /* ---------- Borboletas ---------- */
@@ -1807,19 +1857,18 @@ ol {
 
 /* ---------- Reveal ---------- */
 [data-reveal] {
-  opacity: 0;
-  transform: translateY(24px);
   transition: opacity 0.7s ease, transform 0.7s ease;
   transition-delay: var(--delay, 0ms);
+}
+
+.js [data-reveal]:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(24px);
 }
 
 [data-reveal].is-visible {
   opacity: 1;
   transform: none;
-}
-
-.js [data-reveal] {
-  opacity: 0;
 }
 
 /* ---------- Responsivo ---------- */
@@ -1974,8 +2023,8 @@ ol {
   }
 
   .brand-mark {
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 46px;
   }
 
   .brand-text strong {

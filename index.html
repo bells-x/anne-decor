@@ -9,7 +9,9 @@
   <meta property="og:title" content="Anne Decorações — Onde a sua ideia ganha forma">
   <meta property="og:description" content="Onde a sua ideia ganha forma. Decorações personalizadas feitas à mão para a maior chegada da sua vida. Encomendas para todo o Brasil.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-64.png" sizes="64x64" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon-180.png">
+  <meta property="og:image" content="assets/logo-gold.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
@@ -47,9 +49,9 @@
 
   <header class="site-header" id="topo">
     <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Anne Decorações — página inicial">
+      <a class="brand" href="#inicio">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#F3DCE0"/><g fill="#B96C7B"><circle cx="18" cy="27" r="7"/><circle cx="26" cy="23" r="9"/><circle cx="32" cy="28" r="6"/><rect x="13" y="27" width="24" height="7" rx="3.5"/></g><path d="m31 11 1.2 3.3 3.3 1.2-3.3 1.2L31 20l-1.2-3.3-3.3-1.2 3.3-1.2Z" fill="#C9A17C"/></svg>
+          <img src="assets/logo-emblem.png" alt="" width="575" height="467">
         </span>
         <span class="brand-text">
           <strong>Anne Decorações</strong>
@@ -265,6 +267,9 @@
         <div class="atelier-visual" data-reveal>
           <div class="atelier-frame">
             <img src="assets/atelier.svg" alt="Ilustração do ateliê: prateleira com potes e novelos, mesa com tecidos dobrados, cesta de costura e tesoura." width="480" height="540" loading="lazy">
+            <figure class="atelier-plaque">
+              <img src="assets/logo-gold.jpg" alt="Marca Anne Decor em relevo dourado, com a letra A florida e borboletas." width="800" height="592" loading="lazy">
+            </figure>
           </div>
           <div class="atelier-note">
             <span class="atelier-note-icon" aria-hidden="true"><svg class="icon"><use href="#icon-heart"/></svg></span>
@@ -343,7 +348,7 @@
 
         <div class="testimonials">
           <figure class="testimonial" data-reveal style="--delay: 0ms">
-            <div class="stars" aria-label="5 de 5 estrelas">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas">
               <svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg>
             </div>
             <blockquote>“O detalhe de porta ficou ainda mais lindo do que eu imaginava. Todo mundo parou para tirar foto na porta da maternidade!”</blockquote>
@@ -354,7 +359,7 @@
           </figure>
 
           <figure class="testimonial testimonial--featured" data-reveal style="--delay: 80ms">
-            <div class="stars" aria-label="5 de 5 estrelas">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas">
               <svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg>
             </div>
             <blockquote>“Encomendei o kit de laços e as roupinhas de crochê para o ensaio da minha filha. A maciez e o acabamento são de outro nível.”</blockquote>
@@ -365,7 +370,7 @@
           </figure>
 
           <figure class="testimonial" data-reveal style="--delay: 160ms">
-            <div class="stars" aria-label="5 de 5 estrelas">
+            <div class="stars" role="img" aria-label="5 de 5 estrelas">
               <svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg><svg class="icon"><use href="#icon-star"/></svg>
             </div>
             <blockquote>“O letreiro e a cabeceira transformaram o quarto. Recebi tudo no prazo e muito bem embalado, com um bilhetinho à mão.”</blockquote>
@@ -520,12 +525,10 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a class="brand brand--footer" href="#inicio" aria-label="Anne Decorações — página inicial">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#F3DCE0"/><g fill="#B96C7B"><circle cx="18" cy="27" r="7"/><circle cx="26" cy="23" r="9"/><circle cx="32" cy="28" r="6"/><rect x="13" y="27" width="24" height="7" rx="3.5"/></g><path d="m31 11 1.2 3.3 3.3 1.2-3.3 1.2L31 20l-1.2-3.3-3.3-1.2 3.3-1.2Z" fill="#C9A17C"/></svg>
-          </span>
-          <span class="brand-text"><strong>Anne Decorações</strong><small>onde a sua ideia ganha forma</small></span>
+        <a class="footer-logo-link" href="#inicio" aria-label="Anne Decorações — página inicial">
+          <img class="footer-logo" src="assets/logo-full.png" alt="Anne Decor" width="880" height="640">
         </a>
+        <p class="footer-tagline">Onde a sua ideia ganha forma.</p>
         <p>Decorações artesanais para bebês, feitas com carinho no ateliê de casa.</p>
       </div>
 
