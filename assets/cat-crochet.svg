@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDF8F2"/>
+      <stop offset="1" stop-color="#F4EADD"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="260" fill="url(#bg3)"/>
+  <!-- clothesline -->
+  <line x1="30" y1="50" x2="330" y2="50" stroke="#C9A17C" stroke-width="2"/>
+  <!-- onesie -->
+  <g transform="translate(70,60)">
+    <path d="M0 0 L 20 -10 L 30 0 L 40 -10 L 60 0 L 55 80 L 40 90 L 20 90 L 5 80 Z" fill="#F3DCE0" stroke="#D98E9B" stroke-width="1.5"/>
+    <circle cx="30" cy="30" r="4" fill="#B56775"/>
+    <circle cx="30" cy="50" r="4" fill="#B56775"/>
+    <path d="M20 0 Q 30 12 40 0" fill="none" stroke="#B56775" stroke-width="1.5"/>
+  </g>
+  <!-- booties -->
+  <g transform="translate(160,150)">
+    <ellipse cx="25" cy="30" rx="26" ry="16" fill="#E4EBDF" stroke="#93A98C" stroke-width="1.5"/>
+    <rect x="10" y="10" width="30" height="22" rx="10" fill="#E4EBDF" stroke="#93A98C" stroke-width="1.5"/>
+    <path d="M10 20 Q 25 14 40 20" stroke="#5F7A5D" stroke-width="1.5" fill="none"/>
+    <circle cx="25" cy="12" r="3" fill="#5F7A5D"/>
+  </g>
+  <g transform="translate(230,150)">
+    <ellipse cx="25" cy="30" rx="26" ry="16" fill="#F3DCE0" stroke="#D98E9B" stroke-width="1.5"/>
+    <rect x="10" y="10" width="30" height="22" rx="10" fill="#F3DCE0" stroke="#D98E9B" stroke-width="1.5"/>
+    <path d="M10 20 Q 25 14 40 20" stroke="#B56775" stroke-width="1.5" fill="none"/>
+    <circle cx="25" cy="12" r="3" fill="#B56775"/>
+  </g>
+  <!-- hat -->
+  <g transform="translate(250,55)">
+    <path d="M0 40 Q 30 0 60 40 L 55 50 L 5 50 Z" fill="#F2D9A6" stroke="#C9A17C" stroke-width="1.5"/>
+    <rect x="0" y="40" width="60" height="12" rx="6" fill="#C9A17C"/>
+    <circle cx="30" cy="10" r="6" fill="#D98E9B"/>
+  </g>
+  <!-- yarn ball -->
+  <g transform="translate(40,180)">
+    <circle cx="20" cy="20" r="18" fill="#93A98C"/>
+    <path d="M4 14 Q 20 22 36 14" stroke="#5F7A5D" stroke-width="1.5" fill="none"/>
+    <path d="M4 26 Q 20 18 36 26" stroke="#5F7A5D" stroke-width="1.5" fill="none"/>
+  </g>
+  <!-- hearts -->
+  <g fill="#D98E9B" opacity="0.7">
+    <path d="M320 80 C320 74 314 72 311 76 C308 72 302 74 302 80 C302 88 311 93 311 93 C311 93 320 88 320 80 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 540">
+  <defs>
+    <linearGradient id="shelf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9A17C"/>
+      <stop offset="1" stop-color="#A87A55"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="540" fill="#FDF8F2"/>
+  <!-- shelf -->
+  <rect x="40" y="60" width="400" height="14" rx="4" fill="url(#shelf)"/>
+  <rect x="40" y="60" width="400" height="4" fill="#8A5E3E" opacity="0.3"/>
+  <!-- jars and yarn -->
+  <g>
+    <rect x="60" y="20" width="34" height="40" rx="6" fill="#F3DCE0"/>
+    <rect x="66" y="14" width="22" height="8" rx="3" fill="#B56775"/>
+    <circle cx="120" cy="40" r="20" fill="#93A98C"/>
+    <circle cx="120" cy="40" r="12" fill="#E4EBDF"/>
+    <rect x="150" y="24" width="30" height="36" rx="6" fill="#F2D9A6"/>
+    <rect x="156" y="18" width="18" height="8" rx="3" fill="#C9A17C"/>
+    <circle cx="210" cy="42" r="18" fill="#A8C4D0"/>
+    <circle cx="210" cy="42" r="10" fill="#E4EFF2"/>
+    <rect x="240" y="22" width="28" height="38" rx="6" fill="#F3DCE0"/>
+  </g>
+  <!-- table -->
+  <rect x="60" y="320" width="360" height="16" rx="6" fill="url(#shelf)"/>
+  <rect x="80" y="336" width="12" height="120" rx="4" fill="#8A5E3E"/>
+  <rect x="388" y="336" width="12" height="120" rx="4" fill="#8A5E3E"/>
+  <!-- fabrics -->
+  <g>
+    <rect x="90" y="280" width="120" height="40" rx="8" fill="#F3DCE0"/>
+    <rect x="100" y="270" width="100" height="16" rx="4" fill="#D98E9B"/>
+    <rect x="230" y="290" width="90" height="30" rx="8" fill="#E4EBDF"/>
+    <rect x="240" y="280" width="70" height="14" rx="4" fill="#93A98C"/>
+  </g>
+  <!-- basket -->
+  <ellipse cx="360" cy="300" rx="46" ry="26" fill="#C9A17C"/>
+  <rect x="314" y="270" width="92" height="30" rx="8" fill="#A87A55"/>
+  <g stroke="#8A5E3E" stroke-width="2" fill="none">
+    <path d="M320 278 Q 360 290 400 278"/>
+    <path d="M320 286 Q 360 298 400 286"/>
+  </g>
+  <!-- scissors -->
+  <g transform="translate(120,360) rotate(-20)">
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#B56775" stroke-width="2"/>
+    <circle cx="26" cy="0" r="8" fill="none" stroke="#B56775" stroke-width="2"/>
+    <line x1="6" y1="6" x2="40" y2="40" stroke="#B56775" stroke-width="3" stroke-linecap="round"/>
+    <line x1="20" y1="6" x2="40" y2="40" stroke="#B56775" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- needle and thread -->
+  <path d="M 200 400 Q 260 380 320 410" stroke="#D98E9B" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  <circle cx="200" cy="400" r="4" fill="#B56775"/>
+  <!-- heart -->
+  <path d="M 420 470 C 420 460 410 455 405 462 C 400 455 390 460 390 470 C 390 482 405 490 405 490 C 405 490 420 482 420 470 Z" fill="#D98E9B"/>
+</svg>

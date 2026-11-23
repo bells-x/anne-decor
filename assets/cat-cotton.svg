@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDF8F2"/>
+      <stop offset="1" stop-color="#F4EADD"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="260" fill="url(#bg6)"/>
+  <!-- cloud-shaped holder -->
+  <g transform="translate(90,70)">
+    <circle cx="40" cy="40" r="34" fill="#F3DCE0"/>
+    <circle cx="80" cy="30" r="30" fill="#F3DCE0"/>
+    <circle cx="120" cy="40" r="34" fill="#F3DCE0"/>
+    <rect x="40" y="40" width="80" height="40" rx="8" fill="#F3DCE0"/>
+    <!-- lid -->
+    <ellipse cx="80" cy="30" rx="50" ry="12" fill="#D98E9B"/>
+    <circle cx="80" cy="22" r="6" fill="#B56775"/>
+    <!-- opening -->
+    <ellipse cx="80" cy="42" rx="26" ry="8" fill="#FFFFFF" opacity="0.7"/>
+    <!-- cotton balls -->
+    <circle cx="60" cy="70" r="12" fill="#FFFFFF"/>
+    <circle cx="80" cy="76" r="14" fill="#FFFFFF"/>
+    <circle cx="100" cy="70" r="12" fill="#FFFFFF"/>
+    <circle cx="70" cy="92" r="11" fill="#FFFFFF"/>
+    <circle cx="92" cy="92" r="11" fill="#FFFFFF"/>
+  </g>
+  <!-- flowers -->
+  <g transform="translate(40,200)">
+    <circle cx="10" cy="10" r="7" fill="#93A98C"/>
+    <circle cx="22" cy="10" r="7" fill="#F2D9A6"/>
+    <circle cx="16" cy="0" r="7" fill="#D98E9B"/>
+  </g>
+  <g transform="translate(290,200)">
+    <circle cx="10" cy="10" r="7" fill="#93A98C"/>
+    <circle cx="22" cy="10" r="7" fill="#F2D9A6"/>
+    <circle cx="16" cy="0" r="7" fill="#D98E9B"/>
+  </g>
+  <!-- base -->
+  <rect x="0" y="230" width="360" height="30" fill="#E4EBDF"/>
+</svg>
