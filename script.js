@@ -1,7 +1,7 @@
 const CONFIG = {
   whatsapp: "5586995103651",
   defaultMessage:
-    "Olá! Vim pelo site da Anne Decorações e gostaria de fazer um pedido.",
+    "Olá! Vim pelo site da Anne Decor e gostaria de fazer um pedido.",
 };
 
 const WHATSAPP_BASE = `https://wa.me/${CONFIG.whatsapp}`;

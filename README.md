@@ -1,4 +1,4 @@
-# Anne Decorações — onde a sua ideia ganha forma
+# Anne Decor — onde a sua ideia ganha forma
 
 Site institucional e de encomendas para um ateliê de decorações artesanais para bebês.
 Página única, sem dependências de build: basta abrir o `index.html` no navegador.
